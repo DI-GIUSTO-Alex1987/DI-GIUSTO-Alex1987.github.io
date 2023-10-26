@@ -142,7 +142,7 @@ if (screen.width >= 1920 && screen.height >= 1080) {
 
 /**
  * Apparition des articles
- * */
+**/
 
 const paginationNumbers = document.getElementById("pagination-numbers");
 const paginatedList = document.getElementById("paginated-list");

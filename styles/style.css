@@ -15,6 +15,8 @@ body{
 /*Css background Section - Début*/
 
 .section-position{
+
+    
     background-position: center;
     background-size: cover;
     min-height: 100vh;
@@ -56,7 +58,18 @@ body{
 /*Css background Section - Fin*/
 
 
-/*Css navbar - Début*/
+/*Css navbar new - Début*/
+
+.background-nav{
+    background-color: rgba(245, 245, 245, 0) !important;
+    height: 80vh;
+}
+
+.background-nav-mobile{
+    background-color: rgba(245, 245, 245, 0) !important;
+}
+
+
 
 .nav-link{
     margin-right: 50px;
@@ -76,8 +89,10 @@ body{
 }
 
 .navbar-toggler{
-    border-color: whitesmoke !important;
+    border-color: rgba(245, 245, 245, 0) !important;
 }
+
+
 
 .collapse, .navbar-collapse{
     justify-content: flex-end !important;
@@ -215,6 +230,13 @@ li{
     align-items: flex-end;
     padding: 25px;
     align-items: baseline;
+}
+
+.pos-title-section-dark{
+    align-items: flex-end;
+    padding: 25px;
+    align-items: baseline;
+
 }
 
 .section-dark{
@@ -567,6 +589,15 @@ li{
 }
 
 
+.besoins-desktop{
+    display: block;
+}
+
+.besoins-mobile{
+    display: none;
+}
+
+
 .pos-section-deroulement{
     min-height: 80vh;
 }
@@ -862,20 +893,19 @@ li{
     min-height: 100vh;
 }
 
-.offcanvas-header {
+
+.background-header-title{
     background-color: whitesmoke !important;
+
 }
 
-.offcanvas{
+.background-portfolio{
     --bs-offcanvas-width: 100vw !important;
     background-image: url(../img/wood-dark.jpg);
-    
-    /*
-    background-color: #d4cbc0 !important;
-    background-image: url(../img/canvas.jpg);
-    background-size: cover;
-    */
+
 }
+
+
 
 .canvas-side-left{
     background-color: whitesmoke !important;
@@ -1057,7 +1087,7 @@ li{
     text-align: start;
 }
 
-.commentaire{
+.message{
     height: 200px;
 }
 
@@ -1141,22 +1171,28 @@ footer{
  * ========================================================================= */
 
 
-@media (min-width: 500px) {
-    .block-site-vitrine-content {
-        padding: 25px;
-        padding-left: 75px !important;
-    }
-    
-    .block-e-commerce-content {
-        padding: 25px;
-        padding-left: 75px !important;
-    }
 
-}
 
 
 
 @media (max-width: 992px) {
+    
+
+
+
+    @media (orientation: landscape) {
+        .canvas-side-left{
+            display: none;
+        }
+
+        .offcanvas-header{
+            display: none !important;
+        }
+
+        .pos-caption{
+            display: none;
+        }
+    }
 
 
     .h5, h5 {
@@ -1167,13 +1203,32 @@ footer{
         text-align: start;
     }
 
+
     /*Css navbar - Début*/
+/*
+    .desktop-version{
+        display: none;
+    }
+    */
+
+    .background-nav-mobile{
+        /*
+        background-color: rgba(245, 245, 245, 0.6) !important;
+        */
+        text-align: center;
+        flex-grow: 0 !important;
+
+    }
 
 
     .nav-link {
-        margin-right: 90px;
-        color: rgb(0, 0, 0) !important;
+        margin-right: auto;
+        color: whitesmoke !important;
         font-family: 'libre_franklinbold';
+    }
+
+    .pos-btn-menu-mobile{
+        padding-left: 75%;
     }
 
 
@@ -1211,6 +1266,18 @@ footer{
 
     }
 
+    .offcanvas-backdrop{
+        animation: none;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+
+    .btn-close {
+        opacity: 1 !important;
+    }
+
     /*Css navbar - fin*/
 
     /*Css background Section - Début*/
@@ -1219,7 +1286,8 @@ footer{
     background-position: center;
     background-size: cover;
     min-height: 100vh;
-    background-attachment: fixed;
+    width: 100%;
+    background-attachment: scroll;
     position: relative;
 }
 
@@ -1229,27 +1297,36 @@ footer{
 }
 
 .apropos{
-    background-image: url(../img/background_apropos-mobile.png);
+    background-image: none;
+    background-color: #f0f2f3;
     box-shadow: 0 0 8px 3px rgb(0, 0, 0) inset;
 }
 
 .prestations{
-    background-image: url(../img/background_prestations-mobile.png);
+    background-image: none;
+    background-color: #342513;
     box-shadow: 0 0 8px 3px rgb(0, 0, 0) inset;
+    /*
+    background-image: linear-gradient(#342515, #918157);
+    */
+    
 }
 
 .portfolio{
-    background-image: url(../img/background_portfolio.png);
+    background-image: none;
+    background-color: #f0f2f3;
     box-shadow: 0 0 8px 3px rgb(0, 0, 0) inset;
 }
 
 .blog{
-    background-image: url(../img/background_blog.png);
+    background-image: none;
+    background-color: #342513;
     box-shadow: 0 0 8px 3px rgb(0, 0, 0) inset;
 }
 
 .contact{
     background-image: url(../img/background_contact.png);
+    background-position: center;
     box-shadow: 0 0 8px 3px rgb(0, 0, 0) inset;
 }
 
@@ -1332,9 +1409,7 @@ footer{
 }
 
 .subtitle-down{
-    font-family: 'avenir_next_lt_probold';
-    color: whitesmoke;
-    font-size: large;  
+    display: none; 
 }
 
 .subtitle-down-text{
@@ -1348,7 +1423,7 @@ footer{
     text-align: center;
     padding: 15px;
     padding-left: inherit;
-    padding-top: 120px;
+    padding-top: 15%;
 }
 
 /*Css home - fin*/
@@ -1358,7 +1433,23 @@ footer{
 .title-pos-mobile{
     width: min-content;
     text-align: center;
+    padding: 25px;
+    margin-top: 15%;
+
+}
+
+.title-pos-mobile{
+    width: min-content;
+    text-align: center;
     padding: 10px;
+    
+
+}
+
+.pos-title-section-dark{
+    background-color: #00000073;
+    background-clip: content-box;
+    border-radius: 50px;
 
 }
 
@@ -1381,6 +1472,11 @@ footer{
     width: 0;
 }
 
+.img-techno {
+    height: 50px;
+    padding: 5px;
+}
+
 .name-techno-mobile{
     justify-content: center;
     text-decoration: none;
@@ -1399,6 +1495,7 @@ footer{
     font-family: 'axon_lightregular' !important;
     right: 0;
     transition: none;
+    padding-bottom: 10%;
 }
 
 .pos-block-social.active{
@@ -1524,12 +1621,28 @@ footer{
     padding: 50px;
 }
 
+.besoins-desktop{
+    display: none;
+}
+
+.besoins-mobile{
+    display: block;
+}
+
 
 .pos-block-img-deroulement {
     text-align: center;
     color: white;
     padding-bottom: 25px;
-    padding-top: 25px;
+    padding-top: 15%;
+}
+
+.pos-block-img-deroulement-mobile{
+    text-align: center;
+    color: white;
+    padding-bottom: 25px;
+    padding-top: 10%;
+
 }
 
 .pos-section-besoin {
@@ -1547,20 +1660,30 @@ footer{
     border-bottom-style: double;
 }
 
-.pos-row-clefs {
-    padding: 0px;
-    padding-left: 25px;
-    padding-right: 25px;
-}
 
 
-.flip-a {
-    background-image: url(../img/scotch.png), url(../img/clef1.png);
+
+.background-card-besoins-title {
+    background-image: url(../img/scotch.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     width: 60vw;
-    margin-left: 15%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.background-card-besoins-contents{
+    background-image: url(../img/cadre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+
+}
+
+.pos-text-besoins-contents{
+    padding-bottom: 10%;
 }
 
 
@@ -1595,6 +1718,10 @@ footer{
 
 /*portfolio - début*/
 
+.text-galerie{
+    color: black !important;
+}
+
 .btn-card {
     display: inline-block;
     font-family: 'avenir_next_lt_probold';
@@ -1617,6 +1744,10 @@ footer{
 
 .canvas-side-right {
     height: 90vh;
+}
+
+.zoom-img-mobile{
+    touch-action: auto;
 }
 
 /*portfolio - fin*/
@@ -1676,6 +1807,8 @@ footer{
 
 /* Ajustement responsive tablette format portrait*/
 
+
+
 @media (min-width: 500px) {
     .block-site-vitrine-content {
         padding: 25px;
@@ -1686,7 +1819,6 @@ footer{
         padding: 25px;
         padding-left: 75px !important;
     }
-
 }
 
 

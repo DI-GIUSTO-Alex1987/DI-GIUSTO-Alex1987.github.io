@@ -2,6 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/mountain_black.png">
     <link rel="stylesheet" href="./styles/style.css">
@@ -16,39 +17,47 @@
     Navbar
     ----------->
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary pos-icon-nav-mobile">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav pos-menu-mobile">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#apropos">A propos</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Prestations
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#prestations">Site vitrine / e-commerce</a></li>
-                                <li><a class="dropdown-item" href="#deroulement">Déroulement d'un projet</a></li>
-                                <li><a class="dropdown-item" href="#besoins">Cibler vos besoins !</a></li>
-                            </ul>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        </li>
-                    </ul>
+                <div class="row pos-btn-menu-mobile">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <span><img src="./img/menu.png" alt="" width="25%"></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-end background-nav" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header background-nav-mobile">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body background-nav-mobile">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#home">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#apropos">A propos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Prestations
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#prestations">Site vitrine / e-commerce</a></li>
+                                    <li><a class="dropdown-item" href="#deroulement">Déroulement d'un projet</a></li>
+                                    <li><a class="dropdown-item" href="#besoins">Cibler vos besoins !</a></li>
+                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -283,30 +292,21 @@
                             </div>
                         </div>
 
-                        <!----mobile--nom technologies-->
-                        <div class="name-techno-mobile">
-                            <div class="row name-techno-mobile">
-                                <div class="col-3 title-techno">Wordpress</div>
-                                <div class="col-3 title-techno">Prestashop</div>
-                                <div class="col-3 title-techno">HTML 5</div>
-                            </div>
-                            <div class="row name-techno-mobile">
-                                <div class="col-3 title-techno">CSS 3</div>
-                                <div class="col-3 title-techno">Javascript</div>
-                                <div class="col-3 title-techno">PHP</div>
-                            </div>
-                            <div class="row name-techno-mobile">
-                                <div class="col-3 title-techno">Jquery</div>
-                                <div class="col-3 title-techno">Bootstrap</div>
-                                <div class="col-3 title-techno">Maria DB</div>
-                            </div>
-                            <div class="row name-techno-mobile">
-                                <div class="col-3 title-techno">My SQL</div>
-                                <div class="col-3 title-techno">La suite Adobe</div>
-                                <div class="col-3 title-techno">Figma</div>
-                            </div>
+                        <!----mobile--nom technologies---->
+                        <div class="row">
+                            <div class="col">CMS : Wordpress / Prestashop</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">Language de programmation : PHP / SQL / HTML5 / CSS3 / Javascript</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">Bibliotheque et framework : Boostrap(html/css) / Jquery(Javascript)</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">Design : Figma / Suite Adobe (Photoshop / Illustrator / InDesign / Lightroom / After effect)</div>
                         </div>
                         <!----mobile--nom technologies-->
+
 
                         <br><br><br>
                         <h4><strong>Et si je devais vous donner une bonne raison de collaborer ensemble?</strong></h4>
@@ -350,7 +350,7 @@
     <section class="prestations section-position background_presta" id="prestations">
         <div class="scroll-section-presta">
             <div class="container-fluid title-pos-mobile">
-                <div class="row pos-title-section">
+                <div class="row pos-title-section-dark">
                     <div class="col-lg-2">
                         <img src="./img/mountain_white.png" alt="" style="width: 10vw" ;>
                     </div>
@@ -423,22 +423,180 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid title-pos-mobile" id="deroulement">
-                    <div class="row pos-title-section">
-                        <div class="col-lg-2">
-                            <img src="./img/mountain_white.png" alt="" style="width: 10vw" ;>
+                <div class="background-mobile-deroulement">
+                    <div class="container-fluid title-pos-mobile" id="deroulement">
+                        <div class="row pos-title-section-dark">
+                            <div class="col-lg-2">
+                                <img src="./img/mountain_white.png" alt="" style="width: 10vw" ;>
+                            </div>
+                            <h2 class="col-lg-10 section-dark">Comment va se derouler la creation de votre site ?</h2>
                         </div>
-                        <h2 class="col-lg-10 section-dark">Comment va se derouler la creation de votre site ?</h2>
                     </div>
-                </div>
-                <div class="pos-section-deroulement">
-                    <div class="container-fluid">
+                    <div class="pos-section-deroulement">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-12 pos-blocks-slide">
+                                    <div class="contain-slide">
+                                        <div class="blocHorizontal">
+                                            <div class="slide-deroulement etape-gauche" id="deroulement-begin">
+                                                <div class="row pos-block-img-deroulement">
+                                                    <div class="col-lg-12">
+                                                        <img src="./img/deroulement1.png" alt="" width="50%">
+                                                    </div>
+                                                    <h4>Etape 1</h4>
+                                                    <h4">Nous identifions ensemble vos besoins</h4>
+                                                </div>
+                                            </div>
+                                            <div class="slide-deroulement etape-droite">
+                                                <div class="row">
+                                                    <p>Pour vous accompagner dans votre projet, le premier rendez vous est
+                                                        l’occasion d’échanger sur vos besoins et vos idées. Cette première
+                                                        approche est primordial et nous pouvons l’organiser en
+                                                        physique(région
+                                                        lyonnaise), au téléphone ou en visio-conférence.</p>
+                                                    <br>
+                                                    <p>Ensemble nous allons définir les contours de votre site:</p>
+                                                    <ul>
+                                                        <li>la thématique général de votre site</li>
+                                                        <li>le public visé</li>
+                                                        <li>les contraintes</li>
+                                                        <li>les concurrents</li>
+                                                        <li>le calendrier envisagé pour la réalisation</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="slide-deroulement etape-gauche">
+                                                <div class="row pos-block-img-deroulement">
+                                                    <div class="col-lg-12">
+                                                        <img src="./img/deroulement2.png" alt="" width="50%">
+                                                    </div>
+                                                    <h4>Etape 2</h4>
+                                                    <h4">Achat du nom de domaine et de l’hébergement</h4>
+                                                </div>
+                                            </div>
+                                            <div class="slide-deroulement etape-droite">
+                                                <div class="row">
+                                                    <p>Avant de débuter la création des maquettes, nous allons au préalable
+                                                        déposer le nom de votre site Web et lui trouver un hébergement.</p>
+                                                    <br>
+                                                    <p>Je vous proposerai plusieurs solutions d’hébergement. En priorité des
+                                                        hébergeurs performant et abordable ayant un engagement écologique et
+                                                        durable.</p>
+                                                </div>
+                                            </div>
+                                            <div class="slide-deroulement etape-gauche">
+                                                <div class="row pos-block-img-deroulement">
+                                                    <div class="col-lg-12">
+                                                        <img src="./img/deroulement3.png" alt="" width="50%">
+                                                    </div>
+                                                    <h4>Etape 3</h4>
+                                                    <h4">Création des maquettes Web</h4>
+                                                </div>
+                                            </div>
+                                            <div class="slide-deroulement etape-droite">
+                                                <div class="row">
+                                                    <p>Cette étape est important afin de faciliter l’intégration de votre
+                                                        site
+                                                        Web.</p>
+                                                    <br>
+                                                    <p>Votre site est conçu pour vous refléter, il est donc essentiel
+                                                        qu’il soit entièrement personnalisé afin de vous démarquer de vos
+                                                        concurrents et qu’il respectent les bonnes pratiques d’expérience
+                                                        utilisateurs (UX).</p>
+                                                    <br>
+                                                    <p>Toutes les pages principales seront conçus sous forme de maquette
+                                                        (visuel). Nous validerons ensemble chaque page au fur et mesure de
+                                                        la
+                                                        création.</p>
+                                                </div>
+                                            </div>
+                                            <div class="slide-deroulement etape-gauche">
+                                                <div class="row pos-block-img-deroulement">
+                                                    <div class="col-lg-12">
+                                                        <img src="./img/deroulement4.png" alt="" width="50%">
+                                                    </div>
+                                                    <h4>Etape 4</h4>
+                                                    <h4">Intégration de votre site</h4>
+                                                </div>
+                                            </div>
+                                            <div class="slide-deroulement etape-droite">
+                                                <div class="row">
+                                                    <p>Une fois l’étape de la création des maquettes terminés et validés.
+                                                        Vient
+                                                        le moment de transformer ce travail en page Web.</p>
+                                                    <br>
+                                                    <p>L’intégration se
+                                                        fait
+                                                        tout en m’assurant que le rendu soit responsive (adapté pour
+                                                        ordinateur,
+                                                        tablette et téléphone).</p>
+                                                    <br>
+                                                    <p>Si vous le souhaitez, je pourrais vous transmettre un accès client
+                                                        afin
+                                                        de voir l’évolution du travail.</p>
+                                                </div>
+                                            </div>
+                                            <div class="slide-deroulement etape-gauche">
+                                                <div class="row pos-block-img-deroulement">
+                                                    <div class="col-lg-12">
+                                                        <img src="./img/deroulement5.png" alt="" width="50%">
+                                                    </div>
+                                                    <h4>Etape 5</h4>
+                                                    <h4">Test, référencement SEO et lancement de votre site</h4>
+                                                </div>
+                                            </div>
+                                            <div class="slide-deroulement etape-droite">
+                                                <div class="row">
+                                                    <p>Sur cette phase, nous allons effectuer un contrôle finale de la
+                                                        concordance entre le cahier des charges et le rendu de votre site.
+                                                    </p>
+                                                    <br>
+                                                    <p>Nous allons également tester les différentes fonctionnalités,
+                                                        l’optimisation du référencement naturel, l’aspect responsive et la
+                                                        vitesse de chargement.</p>
+                                                    <br>
+                                                    <p>Une fois cette étape réalisées, nous pourrons mettre votre site en
+                                                        ligne.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="slide-deroulement etape-gauche">
+                                                <div class="row pos-block-img-deroulement">
+                                                    <div class="col-lg-12">
+                                                        <img src="./img/deroulement6.png" alt="" width="50%">
+                                                    </div>
+                                                    <h4>Etape 6</h4>
+                                                    <h4">Votre site est maintenant à vous !</h4>
+                                                </div>
+                                            </div>
+                                            <div class="slide-deroulement etape-droite">
+                                                <div class="row">
+                                                    <p>Je vous formerai à la prise en main de l’interface d’administration
+                                                        de
+                                                        votre site.</p>
+                                                    <br>
+                                                    <p>Vous pourrez ainsi gérer et editer vos contenus et être autonome sur les mise à jour.</p>
+                                                </div>
+                                            </div>
+                                            <div class="slide-deroulement"><a href="#deroulement-begin"><img src="./img/fleche-gauche.png" alt="" width="10%"></a>
+                                            </div>
+                                            <div class="slide-deroulement"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!----mobile--deroulement d'un projet-début-->
+
+                    <div class="container-fluid pos-projet-mobile">
                         <div class="row">
-                            <div class="col-lg-12 pos-blocks-slide">
+                            <div class="col-lg-12">
                                 <div class="contain-slide">
                                     <div class="blocHorizontal">
                                         <div class="slide-deroulement etape-gauche" id="deroulement-begin">
-                                            <div class="row pos-block-img-deroulement">
+                                            <div class="row pos-block-img-deroulement-mobile">
                                                 <div class="col-lg-12">
                                                     <img src="./img/deroulement1.png" alt="" width="50%">
                                                 </div>
@@ -494,7 +652,7 @@
                                         </div>
                                         <div class="slide-deroulement etape-droite">
                                             <div class="row">
-                                                <p>Cette étape est important afin de faciliter l’intégration de votre
+                                                <p>Cette étape est importante afin de faciliter l’intégration de votre
                                                     site
                                                     Web.</p>
                                                 <br>
@@ -577,9 +735,6 @@
                                                 <p>Vous pourrez ainsi gérer et editer vos contenus et être autonome sur les mise à jour.</p>
                                             </div>
                                         </div>
-                                        <div class="slide-deroulement"><a href="#deroulement-begin"><img src="./img/fleche-gauche.png" alt="" width="10%"></a>
-                                        </div>
-                                        <div class="slide-deroulement"></div>
                                     </div>
                                 </div>
                             </div>
@@ -587,164 +742,11 @@
                     </div>
                 </div>
 
-                <!----mobile--deroulement d'un projet-->
-
-                <div class="container-fluid pos-projet-mobile">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="contain-slide">
-                                <div class="blocHorizontal">
-                                    <div class="slide-deroulement etape-gauche" id="deroulement-begin">
-                                        <div class="row pos-block-img-deroulement">
-                                            <div class="col-lg-12">
-                                                <img src="./img/deroulement1.png" alt="" width="50%">
-                                            </div>
-                                            <h4>Etape 1</h4>
-                                            <h4">Nous identifions ensemble vos besoins</h4>
-                                        </div>
-                                    </div>
-                                    <div class="slide-deroulement etape-droite">
-                                        <div class="row">
-                                            <p>Pour vous accompagner dans votre projet, le premier rendez vous est
-                                                l’occasion d’échanger sur vos besoins et vos idées. Cette première
-                                                approche est primordial et nous pouvons l’organiser en
-                                                physique(région
-                                                lyonnaise), au téléphone ou en visio-conférence.</p>
-                                            <br>
-                                            <p>Ensemble nous allons définir les contours de votre site:</p>
-                                            <ul>
-                                                <li>la thématique général de votre site</li>
-                                                <li>le public visé</li>
-                                                <li>les contraintes</li>
-                                                <li>les concurrents</li>
-                                                <li>le calendrier envisagé pour la réalisation</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="slide-deroulement etape-gauche">
-                                        <div class="row pos-block-img-deroulement">
-                                            <div class="col-lg-12">
-                                                <img src="./img/deroulement2.png" alt="" width="50%">
-                                            </div>
-                                            <h4>Etape 2</h4>
-                                            <h4">Achat du nom de domaine et de l’hébergement</h4>
-                                        </div>
-                                    </div>
-                                    <div class="slide-deroulement etape-droite">
-                                        <div class="row">
-                                            <p>Avant de débuter la création des maquettes, nous allons au préalable
-                                                déposer le nom de votre site Web et lui trouver un hébergement.</p>
-                                            <br>
-                                            <p>Je vous proposerai plusieurs solutions d’hébergement. En priorité des
-                                                hébergeurs performant et abordable ayant un engagement écologique et
-                                                durable.</p>
-                                        </div>
-                                    </div>
-                                    <div class="slide-deroulement etape-gauche">
-                                        <div class="row pos-block-img-deroulement">
-                                            <div class="col-lg-12">
-                                                <img src="./img/deroulement3.png" alt="" width="50%">
-                                            </div>
-                                            <h4>Etape 3</h4>
-                                            <h4">Création des maquettes Web</h4>
-                                        </div>
-                                    </div>
-                                    <div class="slide-deroulement etape-droite">
-                                        <div class="row">
-                                            <p>Cette étape est importante afin de faciliter l’intégration de votre
-                                                site
-                                                Web.</p>
-                                            <br>
-                                            <p>Votre site est conçu pour vous refléter, il est donc essentiel
-                                                qu’il soit entièrement personnalisé afin de vous démarquer de vos
-                                                concurrents et qu’il respectent les bonnes pratiques d’expérience
-                                                utilisateurs (UX).</p>
-                                            <br>
-                                            <p>Toutes les pages principales seront conçus sous forme de maquette
-                                                (visuel). Nous validerons ensemble chaque page au fur et mesure de
-                                                la
-                                                création.</p>
-                                        </div>
-                                    </div>
-                                    <div class="slide-deroulement etape-gauche">
-                                        <div class="row pos-block-img-deroulement">
-                                            <div class="col-lg-12">
-                                                <img src="./img/deroulement4.png" alt="" width="50%">
-                                            </div>
-                                            <h4>Etape 4</h4>
-                                            <h4">Intégration de votre site</h4>
-                                        </div>
-                                    </div>
-                                    <div class="slide-deroulement etape-droite">
-                                        <div class="row">
-                                            <p>Une fois l’étape de la création des maquettes terminés et validés.
-                                                Vient
-                                                le moment de transformer ce travail en page Web.</p>
-                                            <br>
-                                            <p>L’intégration se
-                                                fait
-                                                tout en m’assurant que le rendu soit responsive (adapté pour
-                                                ordinateur,
-                                                tablette et téléphone).</p>
-                                            <br>
-                                            <p>Si vous le souhaitez, je pourrais vous transmettre un accès client
-                                                afin
-                                                de voir l’évolution du travail.</p>
-                                        </div>
-                                    </div>
-                                    <div class="slide-deroulement etape-gauche">
-                                        <div class="row pos-block-img-deroulement">
-                                            <div class="col-lg-12">
-                                                <img src="./img/deroulement5.png" alt="" width="50%">
-                                            </div>
-                                            <h4>Etape 5</h4>
-                                            <h4">Test, référencement SEO et lancement de votre site</h4>
-                                        </div>
-                                    </div>
-                                    <div class="slide-deroulement etape-droite">
-                                        <div class="row">
-                                            <p>Sur cette phase, nous allons effectuer un contrôle finale de la
-                                                concordance entre le cahier des charges et le rendu de votre site.
-                                            </p>
-                                            <br>
-                                            <p>Nous allons également tester les différentes fonctionnalités,
-                                                l’optimisation du référencement naturel, l’aspect responsive et la
-                                                vitesse de chargement.</p>
-                                            <br>
-                                            <p>Une fois cette étape réalisées, nous pourrons mettre votre site en
-                                                ligne.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="slide-deroulement etape-gauche">
-                                        <div class="row pos-block-img-deroulement">
-                                            <div class="col-lg-12">
-                                                <img src="./img/deroulement6.png" alt="" width="50%">
-                                            </div>
-                                            <h4>Etape 6</h4>
-                                            <h4">Votre site est maintenant à vous !</h4>
-                                        </div>
-                                    </div>
-                                    <div class="slide-deroulement etape-droite">
-                                        <div class="row">
-                                            <p>Je vous formerai à la prise en main de l’interface d’administration
-                                                de
-                                                votre site.</p>
-                                            <br>
-                                            <p>Vous pourrez ainsi gérer et editer vos contenus et être autonome sur les mise à jour.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!----mobile--deroulement d'un projet-->
+                <!----mobile--deroulement d'un projet-fin-->
 
                 <div class="pos-section-besoin">
                     <div class="container-fluid title-pos-mobile" id="besoins">
-                        <div class="row pos-title-section">
+                        <div class="row pos-title-section-dark">
                             <div class="col-lg-2">
                                 <img src="./img/mountain_white.png" alt="" style="width: 10vw" ;>
                             </div>
@@ -758,7 +760,7 @@
                             <h5 class="section-dark">N’hésitez pas à me faire part de vos projets spécifiques via le formulaire de contact en bas de page.</h5>
                         </div>
                     </div>
-                    <div class="container-fluid">
+                    <div class="container-fluid besoins-desktop">
                         <div class="row pos-clefs">
                             <div class="col-lg-3 pos-row-clefs">
                                 <div class="flip-card" tabIndex="0">
@@ -878,6 +880,123 @@
                         </div>
                     </div>
                 </div>
+
+                <!----mobile--besoins-début-->
+
+
+                <div class="container-fluid besoins-mobile">
+                    <div class="row">
+                        <div class="col-lg-12 background-card-besoins-title">
+                            <h3>Création de concept visuel</h3>
+                        </div>
+                    </div>
+                    <div class="row pos-text-besoins-contents">
+                        <div class="col-lg-12 background-card-besoins-contents">
+                            <p class="section-light">Vous souhaitez créer votre identité visuel?</p>
+                            <br>
+                            <p class="section-light">Elle joue un rôle essentiel dans la détermination de votre image de marque.
+                                Elle comprendra votre nom, votre logo, les couleurs, la typographie, les pictogrammes, la mise en page, les illustrations.
+                                Elle transmet tout aussi bien vos valeurs que la vision et l’activité de votre entreprise.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 background-card-besoins-title">
+                            <h3>Charte graphique</h3>
+                        </div>
+                    </div>
+                    <div class="row pos-text-besoins-contents">
+                        <div class="col-lg-12 background-card-besoins-contents">
+                            <p class="section-light">Vous souhaitez établir votre charte graphique ?</p>
+                            <br>
+                            <p class="section-light">La charte graphique est le document de référence synthétisant l’ensemble de vos règles graphiques. Elle garantit la cohérence de votre identité visuelle sur tout les support employé :
+                                Disposition du logo sur vos cartes de visite, choix des couleurs, dispositions sur plaquette commercial etc…</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 background-card-besoins-title">
+                            <h3>Création de support</h3>
+                        </div>
+                    </div>
+                    <div class="row pos-text-besoins-contents">
+                        <div class="col-lg-12 background-card-besoins-contents">
+                            <p class="section-light">Vous souhaitez créer votre identité visuel?</p>
+                            <br>
+                            <p class="section-light">Vous souhaitez un habillage graphique adapté à vos supports que ce soit du Web ou du print ?</p>
+                            <br>
+                            <p class="section-light">Ce type de travail peut tout à fait découler de la création de votre identité Web.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 background-card-besoins-title">
+                            <h3>Prise ou recherche de visuels</h3>
+                        </div>
+                    </div>
+                    <div class="row pos-text-besoins-contents">
+                        <div class="col-lg-12 background-card-besoins-contents">
+                            <p class="section-light">Si vous créez un site vitrine, il est important de présenter votre société avec des photos de qualité, illustrant l’entreprise elle-même, les employés, les services proposés. Dans le cas d’un site e-commerce, il est indispensable de présenter vos produits sous toutes les coutures avec l'ensemble de leurs variations.</p>
+                            <p class="section-light">Je vous propose d’effectuer des prises de vues pour votre site ou d’adapter des visuels selon votre identitée.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 background-card-besoins-title">
+                            <h3>Webdesign UI / UX</h3>
+                        </div>
+                    </div>
+                    <div class="row pos-text-besoins-contents">
+                        <div class="col-lg-12 background-card-besoins-contents">
+                            <p class="section-light">L’UI (Expérience visuel) est plus centré sur le visuel. Son objectif est d'attirer le regard de l'utilisateur, l'inciter à rester sur la page.</p>
+                            <p class="section-light">L’UX (Expérience utilisateur), sa mission : trouver aisément un contenu, utiliser facilement une interface Web ou mobile.</p>
+                            <br>
+                            <p class="section-light">Besoins de conseils ?</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 background-card-besoins-title">
+                            <h3>Refonte de site Web</h3>
+                        </div>
+                    </div>
+                    <div class="row pos-text-besoins-contents">
+                        <div class="col-lg-12 background-card-besoins-contents">
+                            <p class="section-light">Vous souhaitez donner un coup de neuf à votre site internet?</p>
+                            <br>
+                            <p class="section-light">Une refonte est parfois nécessaire pour optimiser votre visibilité sur les moteurs de recherche et attirer de nouveaux visiteurs.</p>
+                            <p class="section-light">Et c’est également l’occasion de lui redonner un design plus à la page.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 background-card-besoins-title">
+                            <h3>Ajout de fonctionnalisées sur un site existant</h3>
+                        </div>
+                    </div>
+                    <div class="row pos-text-besoins-contents">
+                        <div class="col-lg-12 background-card-besoins-contents">
+                            <p class="section-light">Que ce soit sur une boutique e-commerce avec Prestashop ou sur un site vitrine avec Wordpress l’ajout de fonctionnalités à votre site peut être un atout stratégique.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 background-card-besoins-title">
+                            <h3>Création de Newletters</h3>
+                        </div>
+                    </div>
+                    <div class="row pos-text-besoins-contents">
+                        <div class="col-lg-12 background-card-besoins-contents">
+                            <p class="section-light">Vous souhaitez fidéliser ou informer vos clients?</p>
+                            <p class="section-light">Une newsletter est un e-mail envoyé par une entreprise afin de diffuser largement des informations relatives à son activité. C'est un outil de communication qui s'adresse à une liste de destinataires ayant souscrit à l'envoi d'e-mails marketing volontairement, et qui reçoivent alors régulièrement ces mails.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!----mobile--besoins-fin-->
+
             </div>
     </section>
     <!-----------
@@ -895,9 +1014,9 @@
             </div>
             <div class="row text-presta">
                 <div class="col-lg-12 pos-text-presta">
-                    <h5 class="section-dark">Ce portfolio regroupe certains projets web réalisés.</h5>
-                    <h5 class="section-dark">Cliquez sur les miniatures afin d'avoir plus d'informations le développement de ces travaux.</h5>
-                    <h5 class="section-dark">Cette section sera régulièrement mise à jour, je vous invite à venir la re-visiter de temps à autres !</h5>
+                    <h5 class="section-dark text-galerie">Ce portfolio regroupe certains projets web réalisés.</h5>
+                    <h5 class="section-dark text-galerie">Cliquez sur les miniatures afin d'avoir plus d'informations le développement de ces travaux.</h5>
+                    <h5 class="section-dark text-galerie">Cette section sera régulièrement mise à jour, je vous invite à venir la re-visiter de temps à autres !</h5>
                 </div>
             </div>
             <div class="container-fluid pos-portfolio">
@@ -932,8 +1051,8 @@
 
                 <!-----------Canvas et carousel Portfolio site Mozhell---------->
 
-                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="port_mozhell" aria-labelledby="staticBackdropLabel">
-                    <div class="offcanvas-header">
+                <div class="offcanvas offcanvas-start background-portfolio" data-bs-backdrop="static" tabindex="-1" id="port_mozhell" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header background-header-title">
                         <h2 class="offcanvas-title" id="staticBackdropLabel" style="color: #7f5e33;">Site Web de l'association Mozhell
                             Production</h2>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -961,7 +1080,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-9 canvas-side-right">
-                                <div class="offcanvas-body">
+                                <div class="offcanvas-body zoom-img-mobile">
                                     <div id="carousel_mozhell" class="carousel slide">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#carousel_mozhell" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -1035,8 +1154,8 @@
 
                 <!-----------Canvas et carousel Portfolio site Vigneron---------->
 
-                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="port_vigneron" aria-labelledby="staticBackdropLabel">
-                    <div class="offcanvas-header">
+                <div class="offcanvas offcanvas-start background-portfolio" data-bs-backdrop="static" tabindex="-1" id="port_vigneron" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header background-header-title">
                         <h2 class="offcanvas-title" id="staticBackdropLabel" style="color: #7f5e33;">Site Web domaine viticole 'La banquise'
                         </h2>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1143,8 +1262,8 @@
 
                 <!-----------Canvas et carousel Portfolio site Tatoo---------->
 
-                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="port_tatoo" aria-labelledby="staticBackdropLabel">
-                    <div class="offcanvas-header">
+                <div class="offcanvas offcanvas-start background-portfolio" data-bs-backdrop="static" tabindex="-1" id="port_tatoo" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header background-header-title">
                         <h2 class="offcanvas-title" id="staticBackdropLabel" style="color: #7f5e33;">Site Web Artiste tatoueur et peintre
                             tableaux et fresques 'Flow Purple Art'</h2>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1279,8 +1398,8 @@
 
                 <!-----------Canvas et carousel Portfolio site Spitzberg---------->
 
-                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="port_spitzberg" aria-labelledby="staticBackdropLabel">
-                    <div class="offcanvas-header">
+                <div class="offcanvas offcanvas-start background-portfolio" data-bs-backdrop="static" tabindex="-1" id="port_spitzberg" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header background-header-title">
                         <h2 class="offcanvas-title" id="staticBackdropLabel" style="color: #7f5e33;">Integration du site 'L'atelier du Spitzberg'</h2>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
@@ -1390,8 +1509,8 @@
 
                 <!-----------Canvas et carousel Portfolio site Autres travaux---------->
 
-                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="port_autres" aria-labelledby="staticBackdropLabel">
-                    <div class="offcanvas-header">
+                <div class="offcanvas offcanvas-start background-portfolio" data-bs-backdrop="static" tabindex="-1" id="port_autres" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header background-header-title">
                         <h2 class="offcanvas-title" id="staticBackdropLabel" style="color: #7f5e33;">Retrouvez ici certains de mes travaux</h2>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
@@ -1464,7 +1583,7 @@
                                                 <img src="./img/autres-salkantay.png" class="pos-img-portfolio" alt="...">
                                                 <div class="pos-caption">
                                                     <h5 class="section-dark">Affiche vintage</h5>
-                                                    <p class="section-dark">Affiche décorative créé sur Illustrator.</p> 
+                                                    <p class="section-dark">Affiche décorative créé sur Illustrator.</p>
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
@@ -1481,7 +1600,7 @@
                                             <div class="carousel-item">
                                                 <img src="./img/autres-oeil2.png" class="pos-img-portfolio" alt="...">
                                                 <div class="pos-caption">
-                                                <h5 class="section-dark">Un oeil sur le monde (site de partage et vente de photographies) </h5>
+                                                    <h5 class="section-dark">Un oeil sur le monde (site de partage et vente de photographies) </h5>
                                                     <p class="section-dark">Page Home - visuel 2.</p>
                                                 </div>
                                             </div>
@@ -1536,14 +1655,14 @@
                                             <div class="carousel-item">
                                                 <img src="./img/autres-carna2.png" class="pos-img-portfolio" alt="...">
                                                 <div class="pos-caption">
-                                                <h5 class="section-dark">Projet d'habillement de caisse en bois</h5>
+                                                    <h5 class="section-dark">Projet d'habillement de caisse en bois</h5>
                                                     <p class="section-dark">Sur le thème du carnaval de venise. Travail effectué sur Illustrator et Photoshop.</p>
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
                                                 <img src="./img/autres-carna3.png" class="pos-img-portfolio" alt="...">
                                                 <div class="pos-caption">
-                                                <h5 class="section-dark">Projet d'habillement de caisse en bois</h5>
+                                                    <h5 class="section-dark">Projet d'habillement de caisse en bois</h5>
                                                     <p class="section-dark">Mise en place pour un post sur les réseaux sociaux.</p>
                                                 </div>
                                             </div>
@@ -1564,14 +1683,14 @@
                                             <div class="carousel-item">
                                                 <img src="./img/autres-veloxp2.png" class="pos-img-portfolio" alt="...">
                                                 <div class="pos-caption">
-                                                <h5 class="section-dark">Velo XP - Depanage de cycles sur Lyon</h5>
+                                                    <h5 class="section-dark">Velo XP - Depanage de cycles sur Lyon</h5>
                                                     <p class="section-dark">Recherche de logo.</p>
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
                                                 <img src="./img/autres-veloxp3.png" class="pos-img-portfolio" alt="...">
                                                 <div class="pos-caption">
-                                                <h5 class="section-dark">Velo XP - Depanage de cycles sur Lyon</h5>
+                                                    <h5 class="section-dark">Velo XP - Depanage de cycles sur Lyon</h5>
                                                     <p class="section-dark">Choix du logo définitif.</p>
                                                 </div>
                                             </div>
@@ -1599,7 +1718,7 @@
     <section class="blog section-position" id="blog">
         <div class="scroll-section-blog">
             <div class="container-fluid title-pos-mobile">
-                <div class="row pos-title-section">
+                <div class="row pos-title-section-dark">
                     <div class="col-lg-2">
                         <img src="./img/mountain_white.png" alt="" style="width: 10vw" ;>
                     </div>
